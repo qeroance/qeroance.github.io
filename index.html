@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html>  
+    
     <head>
         <title>Главная</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     </head>
-    <body>  
+
+    <body class = 'body'>  
         <header class="page-header">
-            <a href="index.html" class="page-header_logo">
-                <img class="page-header_logo=icon" src = "assets\logo.png"/>
-            </a>
-            <nav class="page-header_nav"> 
-                <a href="#" class="page-header_nav-link">Мероприятия</a> 
-                <a href="#" class="page-header_nav-link">Блог</a>
-                <a href="#" class="page-header_nav-link">О нас</a>
-                <a href="#" class="page-header_nav-link">Контакты</a>
-                <a href="#" class="page-header_nav-link">Бронь</a>
-            </nav>
-            <button type="button" class="page-header_btn btn">Войти</button>
+            <div class="page-header_container">
+                <a href="index.html" class="page-header_logo">
+                    <img class="page-header_logo-icon" src = "assets\logo.svg"/>
+                </a>
+                <nav class="page-header_nav"> 
+                    <a href="events.html" class="page-header_nav-link">Мероприятия</a> 
+                    <a href="#" class="page-header_nav-link">Блог</a>
+                    <a href="#" class="page-header_nav-link">О нас</a>
+                    <a href="#" class="page-header_nav-link">Контакты</a>
+                </nav>
+            <div class="page-header_right-block"> 
+                <a href="#" class="btn page-header_user-btn">
+                    Войти
+                </a>
+            </div>
         </header>
-        <h1> Заголовок </h1>
+
+        <main class = "main">
+            <a href="index.html" class="main_logo_lenni">
+                <img class="main_logo_lenni-pryamo" src = "assets\LENNI.svg"/>
+            </a>
+        </main>
+
+        <footer class = "page-footer">
+            
+        </footer>
     </body>
 </html>
