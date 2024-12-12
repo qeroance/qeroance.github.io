@@ -123,20 +123,6 @@ body
     top: 375px;
 }
 
-.main_logo_lenni {
-    flex-shrink: 0;
-    width: 1920px;
-    height: 325px;
-    Top: 375px;
-    font-size: 0;
-    text-decoration: none;
-}
-
-.main_logo_lenni-pryamo {
-    width: 100%;
-    height: 100%;
-}
-
 .page-footer {
     flex: 0 0 auto;
 }
@@ -155,22 +141,16 @@ body
 .listing_events-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -30px -120px;
+    gap: 60px;
+    margin: 0 30px 120px;
 }
 
 .events {
-    padding: 140px 100px;
+    padding: 140px 0 100px;
 }
 
 .events_listing {
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    padding-left: 40px;
-    padding-right: 40px;
-    min-width: 1414px;
-    width: 100%;
+    margin-bottom: 100px;
 }
 
 .section-title {
@@ -221,6 +201,8 @@ body
     width: 100%;
     margin: 0 0 25px;
     font-size: 0;
+    text-decoration: none;
+    overflow: hidden;
 }
 
 .event-card_picture:after {
@@ -251,7 +233,7 @@ body
     transition: color 0.2s, text-decoration-color 0.2s;
 }
 
-.event-card_description {
+.event-card_text {
     margin: 0 0 auto;
     font-size: 16px;
     line-height: 22px;
@@ -262,4 +244,9 @@ body
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
+}
+
+.listing_events-card {
+    width: calc(33.333% - 40px);
+    margin: 0 30px 120px;
 }
