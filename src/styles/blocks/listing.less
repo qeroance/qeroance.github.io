@@ -1,0 +1,133 @@
+.listing{
+   &__title{
+      @media @bw1340 {
+         width: 604px;
+         height: 62px;
+      }
+      @media @bw768 {
+         width: 566px;
+         height: 52px;
+         font-size: 24px;
+      }
+      @media @bw600 {
+         width: 280px;
+         height: 42px;
+         font-size: 16px;
+      }
+   }
+   &__events-list{
+      box-sizing: border-box;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      max-width: 1414px;
+      margin: 0 auto;
+      padding-left: 40px;
+      padding-right: 40px;
+      flex-wrap: wrap;
+      gap: 59px;
+      @media @bw1660 {
+         gap: 40px;
+      }
+      @media @bw1020 {
+         gap: 30px;
+      }
+      &--index{
+         display: flex;
+         flex-direction: row;
+      }
+   }
+   &__event-card{
+      display: flex;
+      max-width: 100%;
+      min-width: 280px;
+      width: calc(33.333333% - 40px);
+      @media @bw1660 {
+         width: calc(33.333333% - 26.66666px);
+      }
+      @media @bw1020 {
+         width: calc(50% - 15px);
+      }
+      @media @bw650 {
+         width: 100%;
+      }
+   }
+   &__blog-list{
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      align-items: center;
+      margin: 0 auto;
+      padding-left: 40px;
+      padding-right: 40px;
+      flex-wrap: wrap;
+      gap: 40px;
+      @media @bw768 {
+         padding-left: 20px;
+         padding-right: 20px;
+      }
+   }
+   &__blog-card{
+      display: flex;
+      width: 1334px;
+      @media @bw1440 {
+         width: 1257px;
+      }
+      @media @bw1340 {
+         width: 708px;
+      }
+      @media @bw768 {
+         width: 527px;
+      }
+      @media @bw320 {
+         width: 280px;
+      }
+   }
+   &__title{
+      margin-top: 120px;
+      margin-bottom: 150px;
+      @media @bw768 {
+         margin-top: 50px;
+         margin-bottom: 60px;
+      }
+   }
+   &__showmore{
+      margin-top: 71px;
+      margin-left: 903px;
+   }
+   &__frame-icon{
+      margin-top: 8px;
+      margin-left: 930px;
+   }
+   &__table{
+      width: 868px;
+      height: 66px;
+      top: 2469px;
+      left: 293px;
+      margin-left: 293px;
+      margin-bottom: 100px;
+      @media @bw1340 {
+         width: 829px;
+         margin-left: 40px;
+      }
+      @media @bw1020 {
+         width: 600px;
+         margin-left: 40px;
+      }
+      @media @bw768 {
+         width: 707px;
+         margin-left: 30px;
+      }
+      @media @bw600 {
+         width: 300px;
+         margin-left: 40px;
+         padding-bottom: 50px;
+      }
+      @media @bw320 {
+         width: 280px;
+         margin-left: 20px;
+         padding-bottom: 50px;
+      }
+   }
+}

@@ -1,0 +1,248 @@
+.aboutus{
+   /*display: grid;
+   grid-template-rows: 1fr;
+   grid-template-areas: 
+      "textblock_1"
+      "pics"
+      "2"
+      "textblock"
+      "pics2";*/
+   max-width: 1334px;
+   width: 100%;
+   justify-self: center;
+   margin-top: 150px;
+   @media @bw1340 {
+      width: 708px;
+   }
+   @media @bw320 {
+      font-size: 18px;
+   }
+   &__millenials,
+   &__text2{
+      font-family: @font1;
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 1.3;
+      @media @bw1340 {
+         font-size: 26px;
+      }
+      @media @bw768 {
+         font-size: 18px;
+      }
+   }
+   &__text1{
+      margin-top: 110px;
+   }
+   &__millenials{
+      grid-area: mil;
+   }
+   &__text2{
+      display: block;
+      width: 868px;
+      margin-top: -70px;
+      @media @bw1340 {
+         position: sticky;
+         margin-top: -290px;
+         width: 419px;
+      }
+      @media @bw768 {
+         width: 280px;
+         justify-self: center;
+         margin-top: 145px;
+      }
+   }
+   &__text1,
+   &__text3,
+   &__text4,
+   &__text5{
+      font-family: @font1;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24.51px;
+      @media @bw768 {
+         font-size: 16px;
+      }
+   }
+   &__text1{
+      grid-area: 1;
+      @media @bw1340 {
+         align-self: end;
+         width: 637px;
+      }
+      @media @bw768 {
+         align-self: unset;
+         width: 280px;
+         margin-top: 30px;
+      }
+   }
+   &__text5{
+      grid-area: 5;
+      @media @bw1340 {
+         width: 280px;
+         font-size: 16px;
+         margin-left: 210px;
+      }
+   }
+   &__img1{
+      width: 870px;
+      height: 577px;
+      grid-area: concert;
+      @media @bw768 {
+         width: 280px;
+         height: 187px;
+         align-self: center;
+         position: absolute;
+         margin-top: -70px;
+      }
+   }
+   &__img2{
+      width: 404px;
+      height: 493px;
+      margin-top: 288px;
+      margin-left: 60px;
+      grid-area: art;
+      @media @bw1340 {
+         width: 262px;
+         height: 321px;
+         margin-top: 50px;
+         margin-left: 445px;
+      }
+      @media @bw768 {
+         position: absolute;
+         width: 193px;
+         height: 236px;
+         margin-top: 435px;
+         margin-left: 300px;
+      }
+   }
+   &__img3{
+      width: 872px;
+      height: 361px;
+      margin-top: 19px;
+      margin-left: 49px;
+      grid-area: fair;
+      z-index: 10;
+      @media @bw1340 {
+         width: 672px;
+         height: 342px;
+         margin-left: 25px;
+      }
+      @media @bw768 {
+         width: 267px;
+         height: 111px;
+         margin-top: 175px;
+         margin-left: 225px;
+      }
+   }
+   &__rectangle{
+      position: absolute;
+      width: 930px;
+      height: 246px;
+      background-color: @red_dark;
+      grid-area: rect;
+      @media @bw1340 {
+         width: 708px;
+         height: 187px;
+      }
+      @media @bw768 {
+         width: 280px;
+         height: 75px;
+         margin-top: 170px;
+         margin-left: 215px;
+      }
+   }
+   &__btn{
+      display: inline-flex;
+      font-family: @font1;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.3; 
+      margin-top: 89px;
+      justify-content: space-between;
+      align-items: center;
+      grid-area: btn;     
+      margin-bottom: 120px;
+      @media @bw768 {
+         margin-top: -130px;
+         margin-left: 210px;
+      }
+   }
+   &__textblock{
+      width: 867px;
+      display: flex;
+      flex-direction: column;
+      grid-area: text;
+      margin-left: 467px;
+      margin-top: 50px;
+      @media @bw1340 {
+         width: 386px;
+         margin-left: 20px;
+      }
+      @media @bw768 {
+         width: 280px;
+         justify-self: center;
+         margin-left: 0px;
+         margin-top: 30px;
+      }
+   }
+   &__pics{
+      margin-top: 100px;
+      display: grid;
+      grid-template-columns: 870px 1fr;
+      grid-template-areas: "concert art";
+      @media @bw1340 {
+         display: flex;
+         flex-direction: column;
+         width: 708px;
+      }
+   }
+   &__pics2{
+      margin-top: 110px;
+      display: flex;
+   }
+   &__textblock1{
+      width: 1334px;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas: "mil 1";
+      @media @bw1340 {
+         display: flex;
+         flex-direction: column;
+         width: 708px;
+      }
+      @media @bw768 {
+         display: flex;
+         flex-direction: column;
+         width: 280px;
+         justify-self: center;
+      }
+   }
+   &__textblock2{
+      width: 334px;
+      margin-top: 255px;
+      margin-left: 60px;
+      grid-area: textblock2;
+      display: flex;
+      flex-direction: column;
+      @media @bw1340 {
+         width: 708px;
+         flex-direction: row;
+         margin-top: 440px;
+         margin-left: -935px;
+         gap: 165px;
+      }
+      @media @bw768 {
+         flex-wrap: wrap;
+      }
+   }
+   &__bottom{
+      width: 1334px;
+      margin-bottom: 210px;
+      display: grid;
+      grid-template-columns: 930px 344px;
+      grid-template-areas: "pics2 textblock2";
+      @media @bw1340 {
+         margin-bottom: 0px;
+      }
+   }
+}
